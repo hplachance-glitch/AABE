@@ -1,7 +1,5 @@
 using UnityEngine;
-
 using UnityEngine.InputSystem;
-
 
 
 public class Gun : MonoBehaviour
@@ -17,7 +15,6 @@ public class Gun : MonoBehaviour
     public float gunshotradius = 20f;
 
 
-
     public LayerMask raycastLayerMask;
 
     public LayerMask EnemyLayerMask;
@@ -25,34 +22,42 @@ public class Gun : MonoBehaviour
     public EnemyManager enemyManager;
 
     private float nextTimeToFire;
+    private float fireCount = 0;
 
+    public AudioSource gunshotSound;
+    public AudioSource reloadSound;
 
-    // Update is called once per frame
+    public float reloadTime = 2f;
+    private bool isReloading = false;
+    private float reloadEndTime;
+
+    // TO BE IMPLEMENTED RELOAD ANIM
+    //public Animator reloadAnimation;
 
     void Update()
-
     {
-
+        if (isReloading && Time.time >= reloadEndTime)
+        {
+            isReloading = false;
+        }
+        
         if (Mouse.current != null &&
 
-        Mouse.current.leftButton.wasPressedThisFrame &&
+            Mouse.current.leftButton.wasPressedThisFrame &&
 
-        Time.time > nextTimeToFire)
+            Time.time > nextTimeToFire && !isReloading)
 
         {
-
             Fire();
-
         }
-
     }
-
-
 
     void Fire()
 
     {      
-        // simulate gun shoy
+        fireCount++;
+
+        // simulate gun shot
         Collider[] enemyColliders;
         enemyColliders = Physics.OverlapSphere(transform.position, gunshotradius, EnemyLayerMask);
 
@@ -67,8 +72,8 @@ public class Gun : MonoBehaviour
         }
 
         //Gun shot pow pow powww
-        GetComponent<AudioSource>().Stop();
-        GetComponent<AudioSource>().Play();
+        gunshotSound.Stop();
+        gunshotSound.Play();
         //damage enemies
 
         RaycastHit hit;
@@ -96,5 +101,22 @@ public class Gun : MonoBehaviour
 
         //reset timer
         nextTimeToFire = Time.time + fireRate;
+
+        if (fireCount == 12)
+        {
+            Reload();
+        }
+    }
+
+    void Reload()
+    {
+        isReloading = true;
+        reloadEndTime = Time.time + reloadTime;
+        
+        reloadSound.Play();
+        //TO BE IMPLEMENTED, PLAY ANIM
+        //reloadAnimation.SetTrigger("Reload");
+
+        fireCount = 0;
     }
 }

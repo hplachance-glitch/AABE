@@ -6,6 +6,8 @@ public class PlayerSlide : MonoBehaviour //AI CODE
     private CharacterController myCC;
     private PlayerInput playerInput;
     private PlayerMove playerMove;
+    
+    public ViewmodelAnimation viewmodelAnimation;
 
     [Header("Slide Physics")]
     public float slideForce = 30f;
@@ -106,6 +108,7 @@ public class PlayerSlide : MonoBehaviour //AI CODE
     {
         if (slideTimer > 0f && currentSlideSpeed >= 1f)
         {
+            viewmodelAnimation.PlaySlideAnimation();
             slideTimer -= Time.deltaTime;
             currentSlideSpeed -= currentSlideSpeed * slideDecay * Time.deltaTime;
             myCC.Move(slideDirection * currentSlideSpeed * Time.deltaTime);

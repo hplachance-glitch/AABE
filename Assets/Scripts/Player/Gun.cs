@@ -14,6 +14,7 @@ public class Gun : MonoBehaviour
     public float smallDamage = 1f;
     public float gunshotradius = 20f;
 
+    public ViewmodelAnimation viewmodelAnimation;
 
     public LayerMask raycastLayerMask;
 
@@ -25,7 +26,8 @@ public class Gun : MonoBehaviour
     private float fireCount = 0;
 
     public AudioSource gunshotSound;
-    public AudioSource reloadSound;
+    public AudioSource reload1Sound;
+    public AudioSource reload2Sound;
 
     public float reloadTime = 2f;
     private bool isReloading = false;
@@ -39,6 +41,7 @@ public class Gun : MonoBehaviour
         if (isReloading && Time.time >= reloadEndTime)
         {
             isReloading = false;
+            reload2Sound.Play();
         }
         
         if (Mouse.current != null &&
@@ -56,7 +59,7 @@ public class Gun : MonoBehaviour
 
     {      
         fireCount++;
-
+        viewmodelAnimation.PlayShootAnimation();
         // simulate gun shot
         Collider[] enemyColliders;
         enemyColliders = Physics.OverlapSphere(transform.position, gunshotradius, EnemyLayerMask);
@@ -113,9 +116,8 @@ public class Gun : MonoBehaviour
         isReloading = true;
         reloadEndTime = Time.time + reloadTime;
         
-        reloadSound.Play();
-        //TO BE IMPLEMENTED, PLAY ANIM
-        //reloadAnimation.SetTrigger("Reload");
+        viewmodelAnimation.PlayReloadAnimation();
+        reload1Sound.Play();
 
         fireCount = 0;
     }

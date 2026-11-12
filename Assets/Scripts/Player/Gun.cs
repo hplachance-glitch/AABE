@@ -9,9 +9,9 @@ public class Gun : MonoBehaviour
     public float range = 20f;
     public float fireRate;
 
-    public float bigDamage = 2f;
+    public int bigDamage = 2;
 
-    public float smallDamage = 1f;
+    public int smallDamage = 1;
     public float gunshotradius = 20f;
 
     public ViewmodelAnimation viewmodelAnimation;

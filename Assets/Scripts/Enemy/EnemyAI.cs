@@ -10,12 +10,15 @@ public class EnemyAI : MonoBehaviour
     private NavMeshAgent enemyNavMeshAgent;
     private IEnemyAttack enemyAttack;
 
+    private Enemy enemy;
+
     public float attackCooldown = 1.5f;
     private float nextAttackTime;
     private float stoppingDistance;
 
     private void Start()
     {
+        enemy = GetComponent<Enemy>();
         enemyAwareness = GetComponent<EnemyAwareness>();
         playersTransform = FindAnyObjectByType<PlayerMove>().transform;
         enemyNavMeshAgent = GetComponent<NavMeshAgent>();
@@ -35,6 +38,9 @@ public class EnemyAI : MonoBehaviour
 
     private void Update()
     {
+        bool attacking = enemy.IsAttacking();
+        enemyNavMeshAgent.isStopped = attacking;
+
         if (enemyAwareness.IsAggro)
         {
             enemyNavMeshAgent.SetDestination(playersTransform.position);
@@ -43,6 +49,7 @@ public class EnemyAI : MonoBehaviour
             if (distance <= enemyAttack.AttackRange && Time.time >= nextAttackTime)
             {
                 enemyAttack.Attack(playersTransform);
+                enemy.PlayAttackAnimation();
                 nextAttackTime = Time.time + attackCooldown;
             }
         }
@@ -52,4 +59,5 @@ public class EnemyAI : MonoBehaviour
             enemyNavMeshAgent.SetDestination(transform.position);
         } 
     }
+    
 }

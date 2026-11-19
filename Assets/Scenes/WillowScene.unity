@@ -1816,6 +1816,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SwordEnemy
   enemyManager: {fileID: 694801118}
+  Corpse: {fileID: 0}
+  IsDead: 0
   Blood: {fileID: 7197018725138441370, guid: 942de8b2c321f854ab80d51ccc1e2ded, type: 3}
   attackRange: 2
 --- !u!1 &386365811
@@ -2324,6 +2326,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SwordEnemy
   enemyManager: {fileID: 694801118}
+  Corpse: {fileID: 4848465626773143952, guid: a53fea4787cb48443a5bf229802fe13f, type: 3}
+  IsDead: 0
   Blood: {fileID: 7197018725138441370, guid: 942de8b2c321f854ab80d51ccc1e2ded, type: 3}
   attackRange: 2
 --- !u!4 &474275419 stripped
@@ -2870,6 +2874,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SwordEnemy
   enemyManager: {fileID: 694801118}
+  Corpse: {fileID: 0}
+  IsDead: 0
   Blood: {fileID: 7197018725138441370, guid: 942de8b2c321f854ab80d51ccc1e2ded, type: 3}
   attackRange: 2
 --- !u!1 &768795240
@@ -3325,6 +3331,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SwordEnemy
   enemyManager: {fileID: 694801118}
+  Corpse: {fileID: 0}
+  IsDead: 0
   Blood: {fileID: 7197018725138441370, guid: 942de8b2c321f854ab80d51ccc1e2ded, type: 3}
   attackRange: 2
 --- !u!1 &901173383
@@ -3462,6 +3470,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SwordEnemy
   enemyManager: {fileID: 694801118}
+  Corpse: {fileID: 0}
+  IsDead: 0
   Blood: {fileID: 7197018725138441370, guid: 942de8b2c321f854ab80d51ccc1e2ded, type: 3}
   attackRange: 2
 --- !u!1 &950255372
@@ -5323,7 +5333,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1705579612
 Transform:
   m_ObjectHideFlags: 0

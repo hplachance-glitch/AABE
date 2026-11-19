@@ -8,16 +8,16 @@ public class AlignToPlayer : MonoBehaviour
     private Vector3 targetDir;
 
     //temp
-    public SpriteRenderer spriteRenderer;
-    public Sprite[] sprites;
+    private SpriteRenderer spriteRenderer;
 
-    public float angle;
+    private float angle;
     public int lastIndex;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         player = FindAnyObjectByType<PlayerMove>().transform; //change to PlayerMove later
+        spriteRenderer = GetComponentInChildren<SpriteRenderer>();
     
     }
 
@@ -42,7 +42,6 @@ public class AlignToPlayer : MonoBehaviour
     
     lastIndex = GetIndex(angle);
 
-    spriteRenderer.sprite = sprites[lastIndex];
 }
 
     private int GetIndex(float angle)
@@ -57,8 +56,8 @@ public class AlignToPlayer : MonoBehaviour
         if(angle >= 112.5f && angle < 157.5f)
             return 5;
 
-        //back OJWAODIjaw OMG
-        if(angle <= -157.5f || angle >= 157.5f) // Fixed: changed && to ||
+        //back 
+        if(angle <= -157.5f || angle >= 157.5f) 
             return 4;
         if(angle >= -157.5f && angle < -112.5f)
             return 3;

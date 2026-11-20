@@ -33,6 +33,20 @@ public class PlayerHealth : MonoBehaviour, IDamageable
         }
     }
 
+    public void Heal(int healAmount)
+    {
+        if ((health + healAmount) >= maxHealth)
+        {
+            health = maxHealth;
+            UpdateHealthText();
+        }
+        else
+        {
+            health += healAmount;
+            UpdateHealthText();
+        }
+    }
+
     void UpdateHealthText()
     {
         healthText.text = health.ToString();

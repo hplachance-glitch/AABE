@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 808003}
   - component: {fileID: 808002}
   - component: {fileID: 808001}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: wwe (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -243,7 +243,7 @@ GameObject:
   - component: {fileID: 11633821}
   - component: {fileID: 11633820}
   - component: {fileID: 11633819}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: wwe (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -355,7 +355,7 @@ GameObject:
   - component: {fileID: 62022383}
   - component: {fileID: 62022382}
   - component: {fileID: 62022381}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: wwe (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -758,7 +758,7 @@ GameObject:
   - component: {fileID: 319296203}
   - component: {fileID: 319296202}
   - component: {fileID: 319296201}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: wwe (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -997,7 +997,7 @@ GameObject:
   - component: {fileID: 420100956}
   - component: {fileID: 420100955}
   - component: {fileID: 420100954}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: wwe (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1109,7 +1109,7 @@ GameObject:
   - component: {fileID: 430127751}
   - component: {fileID: 430127750}
   - component: {fileID: 430127749}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: wwe (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1373,7 +1373,7 @@ GameObject:
   - component: {fileID: 554698781}
   - component: {fileID: 554698780}
   - component: {fileID: 554698779}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: wwe (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1473,63 +1473,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &607623230
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 732308178435618399, guid: e6435e6346cb1c24f8aa7d4a42d5d220, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 18.34673
-      objectReference: {fileID: 0}
-    - target: {fileID: 732308178435618399, guid: e6435e6346cb1c24f8aa7d4a42d5d220, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.18
-      objectReference: {fileID: 0}
-    - target: {fileID: 732308178435618399, guid: e6435e6346cb1c24f8aa7d4a42d5d220, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -18.591045
-      objectReference: {fileID: 0}
-    - target: {fileID: 732308178435618399, guid: e6435e6346cb1c24f8aa7d4a42d5d220, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 732308178435618399, guid: e6435e6346cb1c24f8aa7d4a42d5d220, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 732308178435618399, guid: e6435e6346cb1c24f8aa7d4a42d5d220, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 732308178435618399, guid: e6435e6346cb1c24f8aa7d4a42d5d220, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 732308178435618399, guid: e6435e6346cb1c24f8aa7d4a42d5d220, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 732308178435618399, guid: e6435e6346cb1c24f8aa7d4a42d5d220, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 732308178435618399, guid: e6435e6346cb1c24f8aa7d4a42d5d220, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4848465626773143952, guid: e6435e6346cb1c24f8aa7d4a42d5d220, type: 3}
-      propertyPath: m_Name
-      value: KatanaGuy
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: e6435e6346cb1c24f8aa7d4a42d5d220, type: 3}
 --- !u!1 &662466451
 GameObject:
   m_ObjectHideFlags: 0
@@ -1542,7 +1485,7 @@ GameObject:
   - component: {fileID: 662466454}
   - component: {fileID: 662466453}
   - component: {fileID: 662466452}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: wwe (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1974,7 +1917,7 @@ GameObject:
   - component: {fileID: 870125027}
   - component: {fileID: 870125026}
   - component: {fileID: 870125025}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: wwe (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2742,7 +2685,7 @@ GameObject:
   - component: {fileID: 1178771900}
   - component: {fileID: 1178771899}
   - component: {fileID: 1178771898}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: wwe (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2854,7 +2797,7 @@ GameObject:
   - component: {fileID: 1200325145}
   - component: {fileID: 1200325144}
   - component: {fileID: 1200325143}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: wwe (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3038,7 +2981,7 @@ GameObject:
   - component: {fileID: 1478293549}
   - component: {fileID: 1478293548}
   - component: {fileID: 1478293547}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: wwe (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3240,7 +3183,7 @@ GameObject:
   - component: {fileID: 1617560411}
   - component: {fileID: 1617560410}
   - component: {fileID: 1617560409}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: wwe (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3603,6 +3546,75 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8393c6a13af369c4e92bc7855305333e, type: 3}
+--- !u!1001 &1769100020
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 732308178435618399, guid: e6435e6346cb1c24f8aa7d4a42d5d220, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 19.135395
+      objectReference: {fileID: 0}
+    - target: {fileID: 732308178435618399, guid: e6435e6346cb1c24f8aa7d4a42d5d220, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.986
+      objectReference: {fileID: 0}
+    - target: {fileID: 732308178435618399, guid: e6435e6346cb1c24f8aa7d4a42d5d220, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -16.555162
+      objectReference: {fileID: 0}
+    - target: {fileID: 732308178435618399, guid: e6435e6346cb1c24f8aa7d4a42d5d220, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 732308178435618399, guid: e6435e6346cb1c24f8aa7d4a42d5d220, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 732308178435618399, guid: e6435e6346cb1c24f8aa7d4a42d5d220, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 732308178435618399, guid: e6435e6346cb1c24f8aa7d4a42d5d220, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 732308178435618399, guid: e6435e6346cb1c24f8aa7d4a42d5d220, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 732308178435618399, guid: e6435e6346cb1c24f8aa7d4a42d5d220, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 732308178435618399, guid: e6435e6346cb1c24f8aa7d4a42d5d220, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1904675250254129432, guid: e6435e6346cb1c24f8aa7d4a42d5d220, type: 3}
+      propertyPath: enemyManager
+      value: 
+      objectReference: {fileID: 995808461}
+    - target: {fileID: 2215413897777515623, guid: e6435e6346cb1c24f8aa7d4a42d5d220, type: 3}
+      propertyPath: awarenessRadius
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 2215413897777515623, guid: e6435e6346cb1c24f8aa7d4a42d5d220, type: 3}
+      propertyPath: obstacleLayer.m_Bits
+      value: 128
+      objectReference: {fileID: 0}
+    - target: {fileID: 4848465626773143952, guid: e6435e6346cb1c24f8aa7d4a42d5d220, type: 3}
+      propertyPath: m_Name
+      value: KatanaGuy (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e6435e6346cb1c24f8aa7d4a42d5d220, type: 3}
 --- !u!1 &1788856080
 GameObject:
   m_ObjectHideFlags: 0
@@ -3752,7 +3764,7 @@ GameObject:
   - component: {fileID: 1828390643}
   - component: {fileID: 1828390642}
   - component: {fileID: 1828390641}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: wwe (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3852,6 +3864,75 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1975643872
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 732308178435618399, guid: e6435e6346cb1c24f8aa7d4a42d5d220, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 19.135395
+      objectReference: {fileID: 0}
+    - target: {fileID: 732308178435618399, guid: e6435e6346cb1c24f8aa7d4a42d5d220, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.986
+      objectReference: {fileID: 0}
+    - target: {fileID: 732308178435618399, guid: e6435e6346cb1c24f8aa7d4a42d5d220, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -16.555162
+      objectReference: {fileID: 0}
+    - target: {fileID: 732308178435618399, guid: e6435e6346cb1c24f8aa7d4a42d5d220, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 732308178435618399, guid: e6435e6346cb1c24f8aa7d4a42d5d220, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 732308178435618399, guid: e6435e6346cb1c24f8aa7d4a42d5d220, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 732308178435618399, guid: e6435e6346cb1c24f8aa7d4a42d5d220, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 732308178435618399, guid: e6435e6346cb1c24f8aa7d4a42d5d220, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 732308178435618399, guid: e6435e6346cb1c24f8aa7d4a42d5d220, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 732308178435618399, guid: e6435e6346cb1c24f8aa7d4a42d5d220, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1904675250254129432, guid: e6435e6346cb1c24f8aa7d4a42d5d220, type: 3}
+      propertyPath: enemyManager
+      value: 
+      objectReference: {fileID: 995808461}
+    - target: {fileID: 2215413897777515623, guid: e6435e6346cb1c24f8aa7d4a42d5d220, type: 3}
+      propertyPath: awarenessRadius
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 2215413897777515623, guid: e6435e6346cb1c24f8aa7d4a42d5d220, type: 3}
+      propertyPath: obstacleLayer.m_Bits
+      value: 128
+      objectReference: {fileID: 0}
+    - target: {fileID: 4848465626773143952, guid: e6435e6346cb1c24f8aa7d4a42d5d220, type: 3}
+      propertyPath: m_Name
+      value: KatanaGuy
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e6435e6346cb1c24f8aa7d4a42d5d220, type: 3}
 --- !u!1001 &2019579091
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3921,7 +4002,7 @@ GameObject:
   - component: {fileID: 2020391450}
   - component: {fileID: 2020391449}
   - component: {fileID: 2020391448}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: wwe (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4033,7 +4114,7 @@ GameObject:
   - component: {fileID: 2037215176}
   - component: {fileID: 2037215175}
   - component: {fileID: 2037215174}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: wwe (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4202,7 +4283,7 @@ GameObject:
   - component: {fileID: 2128606961}
   - component: {fileID: 2128606960}
   - component: {fileID: 2128606959}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: wwe (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4335,5 +4416,6 @@ SceneRoots:
   - {fileID: 1068985324}
   - {fileID: 491567876}
   - {fileID: 1758673450}
-  - {fileID: 607623230}
   - {fileID: 2072094216}
+  - {fileID: 1975643872}
+  - {fileID: 1769100020}

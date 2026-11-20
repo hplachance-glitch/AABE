@@ -118,17 +118,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 211442306226a21448d1a225affb31cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AlignToPlayer
-  spriteRenderer: {fileID: 6254083828390900316}
-  sprites:
-  - {fileID: 21300000, guid: d51ecc215ab57814a9f20f9f61290dca, type: 3}
-  - {fileID: 21300000, guid: 29e7795e52dd50341b50b8b6bdf24a7f, type: 3}
-  - {fileID: 21300000, guid: e340cbf7b5335c14b9ce5bc66ea91b90, type: 3}
-  - {fileID: 21300000, guid: 29636ca80716d884f9556ef1acbac89b, type: 3}
-  - {fileID: 21300000, guid: 9b7fbbf0810930b4bb7fee9e23cc6938, type: 3}
-  - {fileID: 21300000, guid: 29636ca80716d884f9556ef1acbac89b, type: 3}
-  - {fileID: 21300000, guid: e340cbf7b5335c14b9ce5bc66ea91b90, type: 3}
-  - {fileID: 21300000, guid: 29e7795e52dd50341b50b8b6bdf24a7f, type: 3}
-  angle: 0
   lastIndex: 0
 --- !u!1 &5626627367941167772
 GameObject:
@@ -233,6 +222,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyAwareness
   IsAggro: 0
   awarenessRadius: 10
+  obstacleLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!114 &6839747297731435468
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -259,6 +251,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GunEnemy
   enemyManager: {fileID: 0}
+  Corpse: {fileID: 4848465626773143952, guid: 3a26ca644a36f6645a650fcae9e7c54b, type: 3}
+  IsDead: 0
   Blood: {fileID: 7197018725138441370, guid: 942de8b2c321f854ab80d51ccc1e2ded, type: 3}
   attackRange: 10
   gunPoint: {fileID: 4228180445355383646}

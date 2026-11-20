@@ -243,7 +243,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyAwareness
   IsAggro: 0
-  awarenessRadius: 10
+  awarenessRadius: 25
+  obstacleLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!114 &4518322890462638168
 MonoBehaviour:
   m_ObjectHideFlags: 0

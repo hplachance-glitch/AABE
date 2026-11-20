@@ -28,6 +28,7 @@ public class Gun : MonoBehaviour
     public AudioSource gunshotSound;
     public AudioSource reload1Sound;
     public AudioSource reload2Sound;
+    public AudioSource reload3Sound;
 
     public float reloadTime = 2f;
     private bool isReloading = false;
@@ -43,7 +44,7 @@ public class Gun : MonoBehaviour
             isReloading = false;
             reload2Sound.Play();
         }
-        
+
         if (Mouse.current != null &&
 
             Mouse.current.leftButton.wasPressedThisFrame &&
@@ -112,13 +113,14 @@ public class Gun : MonoBehaviour
     }
 
     void Reload()
-    {
-        isReloading = true;
-        reloadEndTime = Time.time + reloadTime;
-        
-        viewmodelAnimation.PlayReloadAnimation();
-        reload1Sound.Play();
+{
+    isReloading = true;
+    reloadEndTime = Time.time + reloadTime;
+    
+    viewmodelAnimation.PlayReloadAnimation();
+    reload1Sound.Play();
+    reload3Sound.PlayDelayed(0.75f);
 
-        fireCount = 0;
-    }
+    fireCount = 0;
+}
 }

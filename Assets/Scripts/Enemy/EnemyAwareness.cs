@@ -25,19 +25,32 @@ public class EnemyAwareness : MonoBehaviour
         var dis = Vector3.Distance(transform.position, playersTransform.position);
 
         // AI GENERATED
-        if(dis < awarenessRadius)
+        if (dis < awarenessRadius)
         {
-            Vector3 sightPosition = transform.position + Vector3.up *1.5f;
+            Vector3 sightPosition = transform.position + Vector3.up * 1.5f;
             Vector3 playerPosition = playersTransform.position + Vector3.up * 1f;
 
             Vector3 direction = playerPosition - sightPosition;
 
-            // Check if an obstacle blocks the view
-            if (!Physics.Raycast(sightPosition, direction.normalized,
-                                 direction.magnitude, obstacleLayer))
+            // Check what the enemy sees first
+            if (Physics.Raycast(sightPosition, direction.normalized,
+                out RaycastHit hit, direction.magnitude,
+                ~0, QueryTriggerInteraction.Ignore))
             {
-                IsAggro = true;
+                Debug.Log("Enemy sees: " + hit.collider.name);
+
+                // Only detect the player if the first object hit is the player
+                if (hit.collider.GetComponentInParent<PlayerMove>() != null)
+                {
+                    IsAggro = true;
+                }
             }
+
+            Debug.DrawRay(
+                sightPosition,
+                direction,
+                IsAggro ? Color.green : Color.red
+            );
         }
     }
 }
